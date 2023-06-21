@@ -16,7 +16,7 @@ def calcs(ENV):
     output_path = '/data/output.txt'
     
     container = client.containers.run(
-        "mol_similarity:v0.4", 
+        "mol_similarity:v0.5", 
         environment=ENV, 
         volumes=volume_config,
         detach=True,
